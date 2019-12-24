@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{CJKutf8}
+
+\begin{document}
+hello !!!日本語支持しない\LaTeX
+
+\[
+\frac{\partial }{\partial x},
+\frac{\partial }{\partial y},
+\]
+
+\[
+\left|
+\begin{array}{ccc}
+\frac{\partial }{\partial x}, & \frac{\partial }{\partial y}, \\
+u & -v \\
+\end{array}
+\right|
+\]
+
+\[
+\left|
+\begin{array}{ccc}
+\frac{\partial }{\partial x}, & \frac{\partial }{\partial y}, \\
+v & u \\
+\end{array}
+\right|
+\]
+
+\end{document}
