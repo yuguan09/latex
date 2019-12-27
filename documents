@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{example}{Example}
+\newtheorem{definition}{Definition}
+
+\begin{document}
+	
+	Theorem 1. Cauchy-Riemann equations.
+
+	\[
+	\frac{\partial u}{\partial x}=
+	-\frac{\partial v}{\partial y},
+	\]
+	
+	\[
+	\frac{\partial u}{\partial y}=
+	-\frac{\partial v}{\partial x},
+	\]
+	
+
+
+
+\[
+\frac{\partial }{\partial x},
+\frac{\partial }{\partial y},
+\]
+
+\[
+\left|
+\begin{array}{ccc}
+\frac{\partial }{\partial x}, & \frac{\partial }{\partial y}, \\
+u & -v \\
+\end{array}
+\right|
+\]
+
+\[
+\left|
+\begin{array}{ccc}
+\frac{\partial }{\partial x}, & \frac{\partial }{\partial y}, \\
+v & u \\
+\end{array}
+\right|
+\]
+
+\end{document}
