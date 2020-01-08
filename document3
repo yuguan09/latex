@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{example}{Ex\documentclass{article}
+	\usepackage{CJKutf8}
+	\usepackage{amsmath}
+	\usepackage{amsthm}
+	\usepackage{amssymb}
+	ample}
+\newtheorem{definition}{Definition}
+
+
+\title{Free report}
+\author{bq18026 GuanYu}
+
+\begin{document}
+	\maketitle
+	
+	
+\section{Introduction}
+	
+	I don't know how to compile Japanese document by \LaTeX (Texlive2017+Texstudio). So I try to finish this document by English.
+	Although this document is less revevant to physics courrses in this semester, I had summarized some interesting conclusions about phtsics by studying Complex Function Theory. Here I would like to show a short, clear proof about Cauthy Integral Theorem and a geometric thinking of Fourier transform.
+	
+
+
+\section{Cauthy Integral Theorem}
+	
+	区日本語Theorem 1. Cauchy-Riemann equations.
+	
+	\begin{equation}
+	\frac{\partial u}{\partial x}=
+	-\frac{\partial v}{\partial y},
+	\end{equation}
+	
+	\begin{equation}
+	\frac{\partial u}{\partial y}=
+	-\frac{\partial v}{\partial x},
+	\end{equation}
+	
+	Theorm 2. Cauchy Integral theorm
+	
+	\begin{equation}
+		\oint_{c}f(z)\,dz=0
+	\end{equation}
+	
+	We can know the property that if the line integral is path independent, that mean we have a conservative vector field. A conservative vector field is equavalent that the vector field is irrotational. That is, if this formula is ture, We can say this vector field will be a conservative vector field.
+	
+	\begin{equation}
+	\nabla\times V\equiv 0
+	\end{equation}
+	
+Complex Integral also can be represented as
+	
+	
+	
+	\begin{equation}
+	\oint_{c}f(z)\,dz=\int_{c}(udx-vdy)+\mathrm{i}\int_{c}(vdx+udy)
+	\end{equation}
+	
+	Calculate the rotation matrix of the real part and imaginary part.
+	
+	\begin{equation}
+	\nabla\times(u,-v)^T=
+	\left|
+	\begin{array}{ccc}
+	\frac{\partial }{\partial x}, & \frac{\partial }{\partial y}, \\
+	u & -v \\
+	\end{array}
+	\right|
+	=-\frac{\partial v}{\partial x}-\frac{\partial u}{\partial y}=0
+	\end{equation}
+	
+	\begin{equation}
+	\nabla\times(u,-v)^T=
+	\left|
+	\begin{array}{ccc}
+	\frac{\partial }{\partial x}, & \frac{\partial }{\partial y}, \\
+	v & u \\
+	\end{array}
+	\right|
+	=-\frac{\partial v}{\partial x}-\frac{\partial u}{\partial y}=0
+	\end{equation}
+	
+	\begin{equation}
+		\nabla\times\oint_{c}f(z)\,dz=0
+	\end{equation}
+	
+	We can determine that the vector field of complex integral is conservative.Meaning that its integral $\int_{c}f(z)$around C must be 0.
+	
+\section{A geometric thinking of Fourier transform}
+
+\end{document}
