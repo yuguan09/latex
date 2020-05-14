@@ -1,0 +1,47 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\input epsf
+\oddsidemargin=-0.0cm
+\evensidemargin=-0.0cm
+\topmargin=-0.0cm
+\textwidth=7in
+\textheight=9in
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{example}{Example}
+\newtheorem{definition}{Definition}
+
+
+\def\ds{\displaystyle}
+\def\ul{\underline}
+
+
+\begin{document}
+
+
+\section{センサの例を十個列挙せよ}
+
+レーダー　時計　体温計　体重計　GPS　NFC　\\Bluetooth　回転角センサー
+振動センサー　加速度センサー
+
+\section{偏位法と零位法の長所と短所を述べよ}
+
+偏位法のメリット　直接測る読取も易いのですごく便利\\
+デメリット　精度の問題があるかもしれない。例えばばねの摩損\\
+零位法のメリット　精度が高い\\
+デメリット　読取難くて、準備も大変\\
+
+\section{長さ10[mm]のピースを２グループで測定したところ、 Aグループの測定結果は 10.0,10.1,9.9,10.2,9.8,9.9,9.8,10.1,10.2,9.9 Bグループの測定結果は 10,11,9,12,8,11,11,9,9,10 だった。どちらが正確でどちらが精密か述べよ}
+
+Standard deviationを求める
+
+		\[ \alpha^{2}=\frac{1}{n}  \sum_{i=1}^{n}(x_{i}-\bar{x})^{2} \]
+		
+を使って計算する
+	\[ \bar{x}_{A}=\frac{1}{10}  \sum_{i=1}^{10}x_{i}=9.99 \]
+	\[ \bar{x}_{B}=\frac{1}{10}  \sum_{i=1}^{10}x_{i}=10 \]
+	よって、Bのほうが正確である。
