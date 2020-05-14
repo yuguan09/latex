@@ -1,0 +1,126 @@
+\documentclass{article}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{graphicx} 
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{example}{Ex\documentclass{article}
+	\usepackage{CJKutf8}
+	\usepackage{amsmath}
+	\usepackage{amsthm}
+	\usepackage{amssymb}
+	ample}
+\newtheorem{definition}{Definition}
+
+\def\ds{\displaystyle}
+\def\ul{\underline}
+
+
+
+\title{Report No.1}
+\author{BQ18026，GuanYu }
+\date{May 4，2020}
+
+\begin{document}
+\maketitle
+	
+	\section{temperature concentration problem}
+		\subsection{}
+		
+		\begin{equation}
+		 \frac{d{\theta}(t)}{dx}=k({\theta}_{ex}(t)-{\theta}(t)) 
+		\end{equation}
+		
+		\begin{equation}
+		 \frac{d{\theta}(t)}{dx}+k{\theta}(t)=k{\theta}_{ex}(t) 
+		 \end{equation}
+		 
+		\subsection{}
+		Take the laplace transform of both sides of the original differential equation.
+		\begin{equation}
+	 L[\frac{d{\theta}(t)}{dx}+k{\theta}(t)]=L[k{\theta}_{ex}(t)] 
+	    \end{equation}
+	    
+	    \begin{equation}
+		 s{\Theta}(s)-{\theta}(0_{+})+k{\Theta}(s)=k{\Theta}_{ex}(s) 
+		\end{equation}
+		
+		\begin{equation}
+		 {\Theta}(s)(s+k)=k{\Theta}_{ex}(s)+{\theta}(0_{+}) 
+		 \end{equation}
+		 
+		 \begin{equation}
+		 G(s)=\frac{Y(s)}{U(s)}
+		 \end{equation}
+		 
+		 \[=\frac{{\Theta}(s)}{{\Theta}_{ex}(s)}=\frac{k}{s+k}=\frac{1}{\frac{1}{k}s+1} \]
+		 
+		\subsection{}
+		By the unit step response,U(s) will be k/s,
+		
+		\begin{equation}
+		Y(s)=\frac{k{\theta}_{ex0}}{s(s+k)}+\frac{1}{(s+k)}{\theta}(0_{+})
+		\end{equation}
+		
+		\[=\frac{{\theta}_{ex0}}{s}-\frac{{\theta}_{ex0}}{s+k}+\frac{1}{(s+k)}{\theta}(0_{+}) \]
+		Then take the inverse laplace transform of both sides.
+		
+		\begin{equation}
+		L^{-1}[G(s)]=L^{-1}[\frac{{\theta}_{ex0}}{s}-\frac{{\theta}_{ex0}}{s+k}+\frac{1}{(s+k)}{\theta}(0_{+})]
+		\end{equation}
+		
+		\begin{equation}
+		\theta(t)={\theta}_{ex0}-e^{-kt}{\theta}_{ex0}+e^{-kt}{\theta}(0_{+})
+		\end{equation}
+		
+		\begin{figure}[ht]
+			
+			\centering
+			\includegraphics[scale=0.6]{unnamed.jpg}
+			\caption{this is a figure demo}
+			\label{fig:label}
+		\end{figure}
+		
+		
+		
+		\subsection{}
+			\[ {\theta}_{ex0}=18,\hspace{2mm}{\theta}(0_{+})=93,\hspace{2mm}t=2min, \]
+			
+			\begin{equation}
+			\theta(t)=18-18e^{-2k}+93e^{-2k}=68
+			\end{equation}
+			
+			\[ k\approx 0.2 \]
+	
+	\section{gravatation problem}
+	
+	\subsection{}
+		\begin{equation}
+		m\frac{dv}{dt}=mg-cv 
+		\end{equation}	
+		\[ m\frac{dv}{dt}+cv=mg   \]
+		\[ \frac{dv}{dt}+\frac{c}{m}v=g   \]
+		
+	\subsection{}
+		\[ Integrating \hspace{2mm} factor=e^{\frac{c}{m}t},  \]
+		
+		\begin{equation}
+		(e^{\frac{c}{m}t}v)'=e^{\frac{c}{m}t}g
+		\end{equation}	
+		
+		\[ e^{\frac{c}{m}t}v=\int_{}^{}　e^{\frac{c}{m}t}g dt +v_{0} \]
+		\[ v=e^{-\frac{c}{m}t}g\int_{0}^{t}　e^{\frac{c}{m}t_{1}} dt_{1} +e^{-\frac{c}{m}t}v_{0} \]
+		\[ =e^{-\frac{c}{m}t}g(\frac{m}{c}e^{\frac{c}{m}t}-\frac{m}{c})+e^{-\frac{c}{m}t}v_{0} \]
+		
+		\begin{equation}
+		v=g\frac{m}{c}-g\frac{m}{c}e^{-\frac{c}{m}t}+e^{-\frac{c}{m}t}v_{0}
+		\end{equation}
+		
+   \subsection{}
+   
